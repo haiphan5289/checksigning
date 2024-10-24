@@ -26,6 +26,12 @@ jobs:
         brew install cocoapods
         pod install --project-directory=.
         
+    - name: Install Ruby dependencies (Fastlane)
+      run: |
+        gem install bundler  # Ensure Bundler is installed
+        bundle install  # Install dependencies defined in the Gemfile
+
+        
     - name: Build the app
       run: |
         bundle exec fastlane build  # This runs the build lane
