@@ -26,6 +26,9 @@ jobs:
         brew install cocoapods
         pod install --project-directory=.
     
+    - name: Print Xcode Build Log
+      run: cat /Users/runner/Library/Logs/gym/checksigning-checksigning.log
+        
     - name: Build and Test
       run: |
         xcodebuild clean \
