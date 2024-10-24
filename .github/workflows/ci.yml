@@ -35,8 +35,8 @@ jobs:
 #      run: |
 #        bundle exec fastlane build  # This runs the build lane
     
-    - name: Print Xcode Build Log
-      run: cat /Users/runner/Library/Logs/gym/checksigning-checksigning.log
+#    - name: Print Xcode Build Log
+#      run: cat /Users/runner/Library/Logs/gym/checksigning-checksigning.log
         
     - name: Build and Test
       run: |
